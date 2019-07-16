@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>用户登录</p>
+<form method="post" action="">
+    <input type="text" name="username" value="{{ username }}"><br/>
+    <input type="text" name="password" value="{{ password }}"><br/>
+    {{ msg }}<br/>
+    <input type="submit" value="提交">
+    <ul>
+        {% for item in username %}
+            <li>{{ item }}</li>
+            {{ item.index }}
+        {% endfor %}
+    </ul>
+
+</form>
+</body>
+</html>
